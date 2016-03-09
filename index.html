@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +10,56 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
+    	<div class="container">
+
+    	<div class="col-xs-10 jumbotron">
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <h1>Open Big Data Group</h1>
+        <h2>Open Big Data Group</h2>
+        <p>
+        This website contains a collection of libraries to be used in processing massive data size in highly distributed and paralleled environment. They are produced by teams at <a href="http://www.google.com">Google</a> and <a href="http://research.htc.com/">HTC Research Lab</a> , headed by <a href="http://infolab.stanford.edu/~echang/">Prof. Edward Chang</a>. 
+        </p>
 
-        <div><a href="plda">PLDA</a></div>
-        <div><a href="psvm">PSVM</a></div>
-        <div><a href="https://mahout.apache.org/users/misc/parallel-frequent-pattern-mining.html">PFP</a></div>
-        <div><a href="pspectralclustering/">Spectral Clustering</a></div>
+        </div>
+
+    	<div class="col-xs-10">
+		<table class="table table-striped">
+		<tr>
+		<td><a href="plda">PLDA</a></td>
+		<td>Parallel Latent Dirichlet Allocation</td>
+		</tr>
+
+		<tr>
+		<td><a href="psvm">PSVM</a></td>
+		<td>Parallelizing Support Vector Machines on Distributed Computers</td>
+		</tr>
+
+		<tr>
+		<td><a href="https://mahout.apache.org/users/misc/parallel-frequent-pattern-mining.html">PFP</a></td>
+		<td>Parallelizing Support Vector Machines on Distributed Computers</td>
+		</tr>
+
+		<tr>
+		<td><a href="pspectralclustering">PSpectralCluster</a></td>
+		<td>Parallel implementation of Spectral Clustering</td>
+		</tr>
+
+		<tr>
+		<td><a href="speedo">SpeeDO</a></td>
+		<td>Parallelizing Stochastic Gradient Descent for Deep Convolutional Neural Network</td>
+		</tr>
+
+		</table>
+		</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -37,5 +73,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+        </div>
+        </div>
     </body>
 </html>
