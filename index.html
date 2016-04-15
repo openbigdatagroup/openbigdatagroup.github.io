@@ -2,80 +2,205 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Open Big Data Group</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="bootstrap.min.css">
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <style>
+
+        	body{
+        		background-color: #000000;
+				min-height: 100%;
+
+        	}
+        	hr{
+        		border: 1px solid #97C1F2;
+        	}
+
+			a:link, a:visited, a:hover, a:active {
+			    color: #97C1F2;
+			}
+
+			.bodytext{
+				font-size:20px;
+			}
+
+			.planet-box{
+				vertical-align: bottom;
+				position: fixed;
+				width:1000px;
+			    overflow: hidden;
+			    border: 0px solid #ff0000;
+			    margin: 300px 0px 0 -450px;
+			}
+
+			#planet { 
+			    width:1000px;
+			    height:1000px;
+			    background: transparent url(img_ball.png) ;
+			    background-size: cover;
+			    opacity: 0.8;
+   				filter: alpha(opacity=80); /* For IE8 and earlier */
+			}
+
+			#planet {
+			  -webkit-animation-name: rotate;
+			  -webkit-animation-duration:600s;
+			  -webkit-animation-iteration-count:infinite;
+			  -webkit-animation-timing-function:linear;
+			  -moz-animation-name: rotate;
+			  -moz-animation-duration:600s;
+			  -moz-animation-iteration-count:infinite;
+			  -moz-animation-timing-function:linear;
+			}
+
+			@-webkit-keyframes rotate {
+			  from {-webkit-transform:rotate(0deg);}
+			  to {  -webkit-transform:rotate(360deg);}
+			}
+
+			@-moz-keyframes rotate {
+			  from {-moz-transform:rotate(0deg);}
+			  to {  -moz-transform:rotate(360deg);}
+			}
+
+			.content{
+				color: #ffffff;
+			}
+
+			.main{
+				margin-top: 10%;
+
+			}
+
+			.vspace-5pc{
+				margin-bottom:5%;
+			}
+
+
+			.vertical-center1 {
+			  min-height: 100%;  /* Fallback for vh unit */
+			  min-height: 100vh; /* You might also want to use
+			                        'height' property instead.
+			                        
+			                        Note that for percentage values of
+			                        'height' or 'min-height' properties,
+			                        the 'height' of the parent element
+			                        should be specified explicitly.
+			  
+			                        In this case the parent of '.vertical-center'
+			                        is the <body> element */
+
+			  /* Make it a flex container */
+			  display: -webkit-box;
+			  display: -moz-box;
+			  display: -ms-flexbox;
+			  display: -webkit-flex;
+			  display: flex; 
+			  
+			  /* Align the bootstrap's container vertically */
+			    -webkit-box-align : center;
+			  -webkit-align-items : center;
+			       -moz-box-align : center;
+			       -ms-flex-align : center;
+			          align-items : center;
+			  
+			  /* In legacy web browsers such as Firefox 9
+			     we need to specify the width of the flex container */
+			  width: 100%;
+			  
+			  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+			     hence the bootstrap's container won't be aligned to the center anymore.
+			  
+			     Therefore, we should use the following declarations to get it centered again */
+			         -webkit-box-pack : center;
+			            -moz-box-pack : center;
+			            -ms-flex-pack : center;
+			  -webkit-justify-content : center;
+			          justify-content : center;
+			}
+        </style>
     </head>
     <body>
-    	<div class="container">
-
-    	<div class="col-xs-10 jumbotron">
-
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="vertical-center">
+    	<div class="container content">
 
-        <!-- Add your site or application content here -->
-        <h2>Open Big Data Group</h2>
-        <p>
-        This website contains a collection of libraries to be used in processing massive data size in highly distributed and paralleled environment. They are produced by teams at <a href="http://www.google.com">Google</a> and <a href="http://research.htc.com/">HTC Research Lab</a> , headed by <a href="http://infolab.stanford.edu/~echang/">Prof. Edward Chang</a>. 
-        </p>
+			<div class="planet-box">
+		        <div id="planet" >
+		        </div>
+		    </div>
+
+			<div class="row main">
+		        <div class="col-xs-10 col-xs-offset-1">
+			        <h2>Open Big Data Group
+			        <hr>
+			        </h2>
+			        <p class="bodytext">This website contains a collection of libraries to be used in processing massive data size in highly distributed and paralleled environment. They are produced by teams at <a href="http://www.google.com">Google</a> and <a href="http://research.htc.com/">HTC Research Lab</a> , headed by <a href="http://infolab.stanford.edu/~echang/">Prof. Edward Chang</a>. </p>
+			        <hr>
+				</div>
+	        </div>
+
+
+	        <div class="row vspace-5pc"></div>
+
+	        <div class="row h4">
+		        <div class="col-xs-2 col-xs-offset-1"><a href="plda">PLDA</a><hr></div>
+		        <div class="col-xs-2"><a href="psvm">PSVM</a><hr></div>
+		        <div class="col-xs-2"><a href="https://mahout.apache.org/users/misc/parallel-frequent-pattern-mining.html">PFP</a><hr></div>
+		        <div class="col-xs-2"><a href="pspectralclustering">PSpectralCluster</a><hr></div>
+		        <div class="col-xs-2"><a href="speedo">SpeeDO</a><hr></div>
+	        </div>
+
+	        <div class="row">
+		        <div class="col-xs-2 col-xs-offset-1">
+		        Parallel Latent Dirichlet Allocation
+		        </div>
+
+		        <div class="col-xs-2">
+		        Parallelizing Support Vector Machines on Distributed Computers
+		        </div>
+
+		        <div class="col-xs-2">
+		        Parallel FP-Growth for Query Recommendation
+		        </div>
+
+		        <div class="col-xs-2">
+		        Parallel implementation of Spectral Clustering
+		        </div>
+
+		        <div class="col-xs-2">
+		        Parallelizing Stochastic Gradient Descent for Deep Convolutional Neural Network
+		        </div>
+
+
+	        </div>
+
+	        <div class="row vspace-5pc"></div>
+	        <div class="row vspace-5pc"></div>
 
         </div>
-
-    	<div class="col-xs-10">
-		<table class="table table-striped">
-		<tr>
-		<td><a href="plda">PLDA</a></td>
-		<td>Parallel Latent Dirichlet Allocation</td>
-		</tr>
-
-		<tr>
-		<td><a href="psvm">PSVM</a></td>
-		<td>Parallelizing Support Vector Machines on Distributed Computers</td>
-		</tr>
-
-		<tr>
-		<td><a href="https://mahout.apache.org/users/misc/parallel-frequent-pattern-mining.html">PFP</a></td>
-		<td>Parallel FP-Growth for Query Recommendation</td>
-		</tr>
-
-		<tr>
-		<td><a href="pspectralclustering">PSpectralCluster</a></td>
-		<td>Parallel implementation of Spectral Clustering</td>
-		</tr>
-
-		<tr>
-		<td><a href="speedo">SpeeDO</a></td>
-		<td>Parallelizing Stochastic Gradient Descent for Deep Convolutional Neural Network</td>
-		</tr>
-
-		</table>
-		</div>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-75238565-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
         </div>
-        </div>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-75238565-1');ga('send','pageview');
+        </script>
     </body>
 </html>
