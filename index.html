@@ -3,203 +3,279 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>DeepQ AI</title>
-        <meta name="description" content="DeepQ AI, Open AI Platform, DeepQ Open AI Platform, Google, HTC Research">
-        <meta name="keywords" content="DeepQ AI, Open AI Platform, DeepQ Open AI Platform, Google, HTC Research, Deep Learning, PLDA, PSVM, SpeeDO, SVM, LDA">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="DeepQ AI, Open AI Platform, DeepQ Open AI Platform, Google, HTC Research">
+  <meta name="keywords" content="DeepQ AI, Open AI Platform, DeepQ Open AI Platform, Google, HTC Research, Deep Learning, PLDA, PSVM, SpeeDO, SVM, LDA">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <style>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <style>
 
-        	body{
-        		background-color: #000000;
-				min-height: 100%;
+#rectangle {
+  width: 100%;
+  height:350px;
+  background-image: linear-gradient(135deg, #72D3CB 0%, #11456C 100%);
+}
 
-        	}
-        	hr{
-        		border: 1px solid #97C1F2;
-        	}
+      body{
+        background-color: #FFFFFF;
+        n-height: 100%;
 
-			a:link, a:visited, a:hover, a:active {
-			    color: #97C1F2;
-			}
+      }
+      hr{
+        margin-top: 20px;
+        border: 1px solid #FFFFFF;
+        margin-bottom: 22px;
+      }
 
-			.bodytext{
-				font-size:20px;
-			}
+      .hr1{
+        border: 1px solid #71D2CA;
+        width: 105%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 
-			.planet-box{
-				vertical-align: bottom;
-				position: fixed;
-				width:1000px;
-			    overflow: hidden;
-			    border: 0px solid #ff0000;
-			    margin: 300px 0px 0 -450px;
-			}
+      .hr2{
+        border: 1px solid #5CB3B6;
+        width: 105%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 
-			#planet { 
-			    width:1000px;
-			    height:1000px;
-			    background: transparent url(img_ball.png) ;
-			    background-size: cover;
-			    opacity: 0.8;
-   				filter: alpha(opacity=80); /* For IE8 and earlier */
-			}
+      .hr3{
+        border: 1px solid #4D9DA7;
+        width: 105%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 
-			#planet {
-			  -webkit-animation-name: rotate;
-			  -webkit-animation-duration:600s;
-			  -webkit-animation-iteration-count:infinite;
-			  -webkit-animation-timing-function:linear;
-			  -moz-animation-name: rotate;
-			  -moz-animation-duration:600s;
-			  -moz-animation-iteration-count:infinite;
-			  -moz-animation-timing-function:linear;
-			}
+      .hr4{
+        border: 1px solid #3E8698;
+        width: 105%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 
-			@-webkit-keyframes rotate {
-			  from {-webkit-transform:rotate(0deg);}
-			  to {  -webkit-transform:rotate(360deg);}
-			}
+      .hr5{
+        border: 1px solid #266481;
+        width: 105%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 
-			@-moz-keyframes rotate {
-			  from {-moz-transform:rotate(0deg);}
-			  to {  -moz-transform:rotate(360deg);}
-			}
+      a:link, a:visited, a:active {
+        color: #283F58;
+      }
 
-			.content{
-				color: #ffffff;
-			}
+      .a-head:hover, .a-head:active {
+        color: #DCF1EF;
+        text-decoration: none;
+      }
 
-			.main{
-				margin-top: 10%;
+      .a-body:hover, .a-body:active {
+        color: #45BAAE;
+        text-decoration: none;
+      }
+      .a-body {
+        font-family: 'Roboto-Bold';
+        font-size: 20px;
+      }
 
-			}
+      .h2-font{
+        color: #FFFFFF;
+        font-size: 56px;
+        font-family: 'Roboto-Bold';
+      }
 
-			.vspace-5pc{
-				margin-bottom:5%;
-			}
+      .bodytext{
+        font-size:20px;
+        color: #FFFFFF;
+        font-family: 'Roboto';
+      }
+
+      .planet-box{
+        vertical-align: bottom;
+        position: fixed;
+        width:1000px;
+        overflow: hidden;
+        border: 0px solid #ff0000;
+        margin: -700px 0px 0 700px;
+      }
+
+      #planet {
+        width:1000px;
+        height:1000px;
+        background: transparent url(img_ball.png) ;
+        background-size: cover;
+        opacity: 0.8;
+        filter: alpha(opacity=80); /* For IE8 and earlier */
+      }
+
+      #planet {
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration:600s;
+        -webkit-animation-iteration-count:infinite;
+        -webkit-animation-timing-function:linear;
+        -moz-animation-name: rotate;
+        -moz-animation-duration:600s;
+        -moz-animation-iteration-count:infinite;
+        -moz-animation-timing-function:linear;
+      }
+
+      @-webkit-keyframes rotate {
+        from {-webkit-transform:rotate(0deg);}
+        to {  -webkit-transform:rotate(360deg);}
+      }
+
+      @-moz-keyframes rotate {
+        from {-moz-transform:rotate(0deg);}
+        to {  -moz-transform:rotate(360deg);}
+      }
+
+      .content{
+        color: #283F58;
+      }
+
+      .content-detail {
+        color: #283F58;
+        font-size: 16px;
+        font-family: 'Roboto';
+      }
+
+      .detail-row {
+        margin-top: -10px;
+      }
+
+      .main{
+        margin-top: 5%;
+      }
+
+      .vspace-5pc{
+        margin-bottom:10%;
+      }
 
 
-			.vertical-center1 {
-			  min-height: 100%;  /* Fallback for vh unit */
-			  min-height: 100vh; /* You might also want to use
-			                        'height' property instead.
-			                        
-			                        Note that for percentage values of
-			                        'height' or 'min-height' properties,
-			                        the 'height' of the parent element
-			                        should be specified explicitly.
-			  
-			                        In this case the parent of '.vertical-center'
-			                        is the <body> element */
+      .vertical-center1 {
+        min-height: 100%;  /* Fallback for vh unit */
+        min-height: 100vh; /* You might also want to use
+                              'height' property instead.
 
-			  /* Make it a flex container */
-			  display: -webkit-box;
-			  display: -moz-box;
-			  display: -ms-flexbox;
-			  display: -webkit-flex;
-			  display: flex; 
-			  
-			  /* Align the bootstrap's container vertically */
-			    -webkit-box-align : center;
-			  -webkit-align-items : center;
-			       -moz-box-align : center;
-			       -ms-flex-align : center;
-			          align-items : center;
-			  
-			  /* In legacy web browsers such as Firefox 9
-			     we need to specify the width of the flex container */
-			  width: 100%;
-			  
-			  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
-			     hence the bootstrap's container won't be aligned to the center anymore.
-			  
-			     Therefore, we should use the following declarations to get it centered again */
-			         -webkit-box-pack : center;
-			            -moz-box-pack : center;
-			            -ms-flex-pack : center;
-			  -webkit-justify-content : center;
-			          justify-content : center;
-			}
-        </style>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="vertical-center">
-    	<div class="container content">
+                              Note that for percentage values of
+                              'height' or 'min-height' properties,
+                              the 'height' of the parent element
+                              should be specified explicitly.
 
-			<div class="planet-box">
-		        <div id="planet" >
-		        </div>
-		    </div>
+                              In this case the parent of '.vertical-center'
+                              is the <body> element */
 
-			<div class="row main">
-		        <div class="col-xs-10 col-xs-offset-1">
-			        <h2>DeepQ Open AI Platform
-			        <hr>
-			        </h2>
-			        <p class="bodytext">This website contains a collection of libraries to be used in processing massive data size in highly distributed and paralleled environment. They are produced by teams at <a href="http://www.google.com">Google</a> and <a href="https://research.htc.com/">HTC Research Lab</a> , headed by <a href="http://infolab.stanford.edu/~echang/">Prof. Edward Chang</a>. </p>
-			        <hr>
-				</div>
-	        </div>
+        /* Make it a flex container */
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
 
+        /* Align the bootstrap's container vertically */
+          -webkit-box-align : center;
+          -webkit-align-items : center;
+          -moz-box-align : center;
+          -ms-flex-align : center;
+          align-items : center;
 
-	        <div class="row vspace-5pc"></div>
+        /* In legacy web browsers such as Firefox 9
+           we need to specify the width of the flex container */
+        width: 100%;
 
-	        <div class="row h4">
-		        <div class="col-xs-2 col-xs-offset-1"><a href="speedo">Deep Learning</a><hr></div>
-		        <div class="col-xs-2"><a href="plda">PLDA</a><hr></div>
-		        <div class="col-xs-2"><a href="psvm">PSVM</a><hr></div>
-		        <div class="col-xs-2"><a href="https://mahout.apache.org/users/misc/parallel-frequent-pattern-mining.html">PFP</a><hr></div>
-		        <div class="col-xs-2"><a href="pspectralclustering">PSpectralCluster</a><hr></div>
-	        </div>
+        /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+           hence the bootstrap's container won't be aligned to the center anymore.
 
-	        <div class="row">
-                        <div class="col-xs-2 col-xs-offset-1">
-                        Parallelizing Stochastic Gradient Descent for Deep Convolutional Neural Network
-                        </div>
+           Therefore, we should use the following declarations to get it centered again */
+          -webkit-box-pack : center;
+          -moz-box-pack : center;
+          -ms-flex-pack : center;
+          -webkit-justify-content : center;
+          justify-content : center;
+      }
+  </style>
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div id="rectangle">
+    <div class="vertical-center">
+      <div class="container content">
 
-		        <div class="col-xs-2">
-		        Parallel Latent Dirichlet Allocation
-		        </div>
+        <div class="planet-box">
+          <div id="planet" >
+          </div>
+        </div>
 
-		        <div class="col-xs-2">
-		        Parallelizing Support Vector Machines on Distributed Computers
-		        </div>
+        <div class="row main">
+          <div class="col-xs-8">
+            <h2 class="h2-font">DeepQ Open AI Platform
+              <hr>
+            </h2>
+            <p class="bodytext">This website contains a collection of libraries to be used in processing massive data size in highly distributed and paralleled environment. They are produced by teams at <a class="a-head" href="http://www.google.com">Google</a> and <a class="a-head" href="https://research.htc.com/">HTC Research Lab</a> , headed by <a class="a-head" href="http://infolab.stanford.edu/~echang/">Prof. Edward Chang</a>. </p>
+          </div>
+        </div>
+      </div>
 
-		        <div class="col-xs-2">
-		        Parallel FP-Growth for Query Recommendation
-		        </div>
+      <div class="row vspace-5pc"></div>
 
-		        <div class="col-xs-2">
-		        Parallel implementation of Spectral Clustering
-		        </div>
+      <div class="container content">
+        <div class="row h4">
+          <div class="col-xs-2"><a class="a-body" href="speedo">Deep Learning</a><hr class="hr1">
+          </div>
+          <div class="col-xs-2"><a class="a-body" href="plda">PLDA</a><hr class="hr2"></div>
+          <div class="col-xs-2"><a class="a-body" href="psvm">PSVM</a><hr hr3 class="hr3"></div>
+          <div class="col-xs-2"><a class="a-body" href="https://mahout.apache.org/users/misc/parallel-frequent-pattern-mining.html">PFP</a><hr hr4 class="hr4"></div>
+          <div class="col-xs-2"><a class="a-body" href="pspectralclustering">PSpectralCluster</a><hr hr5 class="hr5"></div>
+        </div>
 
-	        </div>
+        <div class="row detail-row">
+          <div class="col-xs-2">
+            <font class="content-detail"">Parallelizing Stochastic Gradient Descent for Deep Convolutional Neural Network</font>
+          </div>
 
-	        <div class="row vspace-5pc"></div>
-	        <div class="row vspace-5pc"></div>
+          <div class="col-xs-2">
+            <font class="content-detail"">Parallel Latent Dirichlet Allocation
+          </div>
+
+          <div class="col-xs-2">
+            <font class="content-detail">Parallelizing Support Vector Machines on Distributed Computers</font>
+          </div>
+
+          <div class="col-xs-2">
+            <font class="content-detail">Parallel FP-Growth for Query Recommendation</font>
+          </div>
+
+          <div class="col-xs-2">
+            <font class="content-detail">Parallel implementation of Spectral Clustering</font>
+          </div>
 
         </div>
-        </div>
+
+        <div class="row vspace-5pc"></div>
+        <div class="row vspace-5pc"></div>
+
+      </div>
+    </div>
+  </div>
 
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create','UA-86833353-9','auto');ga('send','pageview');
-        </script>
-    </body>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-86833353-9','auto');ga('send','pageview');
+  </script>
+</body>
 </html>
